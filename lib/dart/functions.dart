@@ -1,23 +1,29 @@
+import 'package:flutter/cupertino.dart';
+
 /// returns the string 'Hello World'
 String helloWorld() {
-  throw UnimplementedError();
+  return "Hello World";
 }
 
 /// Return the sum of a & b
 int add(int a, int b) {
-  throw UnimplementedError();
+  return a + b;
 }
 
 /// Returns true of tempreture is between 19 and 24, and it's not raining.
 /// Otherwise, false
 bool shouldTravel(int tempreture, bool isRaining) {
-  throw UnimplementedError();
+  if (tempreture >= 19 && tempreture <= 24 && isRaining == false) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /// Should return full name
 /// etc: "Khaled Alhendi"
 String fullName(String firstName, String lastName) {
-  throw UnimplementedError();
+  return ("${firstName} ${lastName}");
 }
 
 /// Returns sum of numbers
@@ -34,14 +40,21 @@ double average(List<int> numbers) {
 ///
 /// etc: countLetters("Hello World", 'l') => 3
 int countLetters(String name, String letter) {
-  throw UnimplementedError();
+  int count = 0;
+  for (int i = 0; i < name.length; i++) {
+    if (letter == name[i]) count++;
+  }
+  return count;
 }
 
 /// Counts occurrence of name in given names
 ///
 /// etc: `countLetters(["Khaled", "Ahmad", "Khaled"], "Khaled") => 2`
 int countNames(List<String> names, String name) {
-  throw UnimplementedError();
+  int count = 0;
+  for (int i = 0; i < name.length; i++) {
+    if (names.l)
+  }
 }
 
 /// Returns a list of unique names
