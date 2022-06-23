@@ -28,12 +28,21 @@ String fullName(String firstName, String lastName) {
 
 /// Returns sum of numbers
 int sum(List<int> numbers) {
-  throw UnimplementedError();
+  int count = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    count += numbers[i];
+  }
+  return count;
 }
 
 /// Returns average of numbers
 double average(List<int> numbers) {
-  throw UnimplementedError();
+  double count = 0;
+  for (int i = 0; i < numbers.length; i++) {
+    count += numbers[i];
+    count / numbers.length;
+  }
+  return count;
 }
 
 /// Counts the occurrence of letters in given name
@@ -52,16 +61,23 @@ int countLetters(String name, String letter) {
 /// etc: `countLetters(["Khaled", "Ahmad", "Khaled"], "Khaled") => 2`
 int countNames(List<String> names, String name) {
   int count = 0;
-  for (int i = 0; i < name.length; i++) {
-    if (names.l)
+  for (int i = 0; i < names.length; i++) {
+    if (names[i] == name) {
+      count++;
+    }
   }
+  return count;
 }
 
 /// Returns a list of unique names
 ///
 /// etc: `["Khaled", "Ahmad", "Khaled"] => ["Khaled", "Ahmad"]`
 List<String> uniqueNames(List<String> names) {
-  throw UnimplementedError();
+  List<String> unique = [];
+  for (int i = 0; i < names.length; i++) {
+    if (names[i].contains("Khaled")) ;
+  }
+  return unique;
 }
 
 /// Returns a map of unique names and their count
